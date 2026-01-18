@@ -51,9 +51,7 @@ export const QueryHeader: React.FC<Props> = ({
 
   return (
     <div className="todoist-query-header">
-      <div className=" HyperMD-header HyperMD-header-1 cm-line">
-        <span className="todoist-query-title cm-header cm-header-1">{title}</span>
-      </div>
+      <span className="todoist-query-title"><h1>{title}</h1></span>
       <div className="todoist-query-controls">
         <HeaderButton
           className="add-task"
