@@ -65,7 +65,7 @@ export default class TodoistPlugin extends Plugin {
 
     this.services.modals.onboarding({
       onTokenSubmit: async (token) => {
-        await accessor.write(token);
+        accessor.write(token);
         await this.services.todoist.initialize(new TodoistApiClient(token, new ObsidianFetcher()));
       },
     });
