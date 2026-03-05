@@ -51,7 +51,7 @@ export const QueryHeader: React.FC<Props> = ({
 
   return (
     <div className="todoist-query-header">
-      <span className="todoist-query-title">{title}</span>
+      <span className="todoist-query-title"><h1>{title}</h1></span>
       <div className="todoist-query-controls">
         <HeaderButton
           className="add-task"
